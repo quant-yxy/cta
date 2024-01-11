@@ -11,3 +11,4 @@ df1.columns = ['code', 'datetime', f'mom_{n}']
 data = data.reset_index().merge(df1, on=['datetime', 'code']).sort_values(['code', 'datetime'])
 ic = ic_group(data, f'mom_{n}', lag=0)
 print_ic_plot(ic, 252, f'mom_{n}')
+sd
